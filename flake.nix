@@ -1,8 +1,6 @@
 {
   description = "Nix for work";
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
