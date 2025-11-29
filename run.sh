@@ -1,6 +1,0 @@
-#!/bin/bash
-
-set -euo | pipefail
-
-# home-manager switch --flake .#chavi -b backup
-nix run github:nix-community/home-manager -- switch --flake .#chavi -b backup
