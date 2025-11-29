@@ -1,10 +1,11 @@
 # Nix
 
 ```bash
-# install nix
+# install nix - https://nixos.wiki/wiki/Nix_Installation_Guide
+sudo install -d -m755 -o $(id -u) -g $(id -g) /nix
 curl -L https://nixos.org/nix/install | sh
-mkdir -p ~/.config/nix && echo 'experimental-features = nix-command flakes' >> ~/.config/nix/nix.conf
-source ~/.nix-profile/etc/profile.d/nix.sh
+source $HOME/.nix-profile/etc/profile.d/nix.sh
+mkdir -p $HOME/.config/nix && echo 'experimental-features = nix-command flakes' >> $HOME/.config/nix/nix.conf
 
 # clone dots
 git clone https://github.com/chavisr/dotfiles
