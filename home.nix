@@ -62,12 +62,15 @@ in
   home.packages = with pkgs; [
     neovim
     ripgrep
-    nil
-    nixpkgs-fmt
     nodejs
-    gcc
+    zig
     jq
     yq
+    git
+    curl
+    kubectl
+    kustomize
+    tree
   ];
 
 }
